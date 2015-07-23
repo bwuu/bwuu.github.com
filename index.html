@@ -28,41 +28,20 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
 
-<p>Hi, my name is Bryan Wu, and this a page where I'm recording the progress on some of my personal projects.</p>
+<p>This page is currently being used to showcase my CS488 project:</p>
 
-<h3>Projects</h3>
+<h3>Ray Tracer</h3>
 
-<h4>Ray Tracer</h4>
+<h4>Objectives</h4>
 
-<p>This is a basic raytracer that I'm writing in C++. Currently, it implements Phong lighting, reflections and transparency. I'm now working on implenting more types of primities (it currently only handles spheres and triangles) and antialiasing. Here are some images that it currently produces:</p>
+<p>Motion blur:</p>
+<img src="/images/mb1.png" alt="blur" width="500" height="500">
+<img src="/images/mb2.png" alt="blur!" width="500" height="500">
 
-<img src="/images/reflection.bmp" alt="reflection" width="700" height="700">
+<p>Texture Mapping:</p>
+<img src="/images/texturedball.png" alt="blur" width="500" height="500">
+<img src="/images/texturedbox.png" alt="blur" width="500" height="500">
 
-<img src="/images/bubbles.bmp" alt="bubbles!" width="700" height="700">
-
-<img src="/images/colorbubbles.bmp" alt="bubbles!" width="700" height="700">
-
-<p>Currently the raytracer only renders stills of hard-coded object, but I am working on getting an interactive executable up to properly demo it.</p>
-
- <h4>Fluid Simulator</h4>
-
- <p> This is a fluid simulator that I'm also writing in C++. It uses the smoothed particle hydrodynamics (SPH) method. Currently, it implements Weakly Compressible SPH and ghost particles at boundaries. For rendering, I've already implemented a marching cubes algorithm with OpenGL, but it's quite CPU intensive so I had to give a lot of render quality with it. I'm currently writing a new renderer based on this paper: http://www.cs.rug.nl/~roe/publications/fluidcurvature.pdf. It's based on using point sprites to splat the particles and then screen space filters to make it look realistic. I've implemented the point sprites and depth extraction so far:</p>
-
- <img src="/images/depth1.bmp">
- <img src="/images/depth2.bmp">
- <img src="/images/depth3.bmp">
- <img src="/images/depth4.bmp">
- <img src="/images/depth5.bmp">
-
- <p> Next is to implement the filters to make it smooth, translucent etc.</p>
-
- <p> For reference, here are some images with the old marching cubes version:</p>
-
- <img src="/images/fluid4.png">
- <img src="/images/fluid3.png">
- <img src="/images/fluid5.png">
-
- <p>This was probably the first programming project I ever undertook, so the code is realllllly messy in some places. I remember trying to optimize with all kinds with pre-computation and whatnot, before I learned that the compiler actually does it all for you. I'll probably go back and refactor the code at some point, after I get better rendering working.</p>
 
       </section>
     </div>
